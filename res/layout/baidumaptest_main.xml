@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:orientation="horizontal" >
+        
+        <TextView android:id="@+id/map_textview"
+        android:layout_width="wrap_content"  
+    	android:layout_height="match_parent"
+    	android:gravity="center_vertical"  
+    	android:text="@string/searchtext" />
+        
+        <AutoCompleteTextView android:id="@+id/map_autocompletetextview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:gravity="center_vertical"
+            android:text="@string/nulltext"/>
+        
+<!--    <Button
+            android:id="@+id/citysearchbutton"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:gravity="right|center_vertical"
+            android:textSize="12sp"
+            android:text="@string/citysearchbuttontext" />
+-->
+        <Button
+            android:id="@+id/mylocationbutton"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:gravity="center|center_vertical"
+            android:textSize="12sp"
+            android:text="@string/mylocationbuttontext" />
+        
+        <Button
+            android:id="@+id/nearbysearchbutton"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:gravity="right|center_vertical"
+            android:textSize="12sp"
+            android:text="@string/nearbysearchbuttontext" />
+        
+    </LinearLayout>
+    
+    <com.ernest.mobilecontextaware.activity.PopupMapView 
+        android:id="@+id/baidumapsView"  
+    	android:layout_width="match_parent"  
+    	android:layout_height="match_parent"  
+    	android:clickable="true" />
+
+</LinearLayout>

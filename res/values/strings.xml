@@ -1,0 +1,33 @@
+<resources>
+
+    <string name="action_settings">action settings</string>
+    <string name="app_name">Mobile Context Aware</string>
+    <string name="main_title">Mobile Context Aware Client</string>
+    <string name="temperature">温度: </string>
+    <string name="light">光强: </string>
+    <string name="accelerometer">加速度: </string>
+    <string name="location">位置: </string>
+    <string name="googleplayservicekey">AIzaSyChr9kG009Hh4lbJyNtTYa5wH81iII5sto</string>
+    <string name="baiduservicekey">6GiyLBfm0GZGmrbVZahoZSqn</string>
+    <string name="baiduservicekeyforpublic">YUYjQfFGOZ9kGRGxra36iMXy</string>
+    <string name="searchtext">搜索: </string>
+    <string name="nulltext">   </string>
+    <string name="citysearchbuttontext">FindInCity</string>
+    <string name="nearbysearchbuttontext">周边搜索</string>
+    <string name="mylocationbuttontext">当前位置</string>
+    <string name="popuptext">我的位置 </string>
+    <string name="readbuttontext">更新数据</string>
+    <string name="testbuttontext">Start Test</string>
+    <string-array name="activity_strings">
+        <item>地图</item>
+        <item>数据</item>
+        <item>致谢：感谢您安装此程序！</item>
+    	<item>目的：此程序用于移动感知数据采集</item>
+    	<item>流量：数据量很小，请勿担心流量</item>
+    	<item>GPS：若给您带来不便可关闭GPS</item>
+    	<item>注意：请在清理内存后重启此程序</item>
+    	<item>声明：此程序绝不侵犯个人隐私数据</item>
+    </string-array>
+    <string name="weatherbuttontext">更新天气</string>
+
+</resources>

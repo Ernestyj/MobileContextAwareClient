@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_GpuSAdNZEeO3BMrS5MLVBA">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_G2PrENNZEeO3BMrS5MLVBA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_G2m3cNNZEeO3BMrS5MLVBA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_G3ExgNNZEeO3BMrS5MLVBA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <elementImport xmi:id="_G3TbANNZEeO3BMrS5MLVBA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_GyOGsNNZEeO3BMrS5MLVBA" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_GyfMcNNZEeO3BMrS5MLVBA" name="ernest">
+      <packagedElement xmi:type="uml:Package" xmi:id="_GyfMcdNZEeO3BMrS5MLVBA" name="mobilecontextaware">
+        <packagedElement xmi:type="uml:Package" xmi:id="_GyfMctNZEeO3BMrS5MLVBA" name="activity">
+          <packagedElement xmi:type="uml:Class" xmi:id="_Gysn0NNZEeO3BMrS5MLVBA" name="MainActivityTest">
+            <generalization xmi:id="_G0GWANNZEeO3BMrS5MLVBA" general="_Gz3FcNNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G2SuYNNZEeO3BMrS5MLVBA" name="TAG" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_G2SuYdNZEeO3BMrS5MLVBA" value="MainActivityTest"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_G2Xm4NNZEeO3BMrS5MLVBA" name="mListView" visibility="private" type="_Gz4TlNNZEeO3BMrS5MLVBA"/>
+            <ownedOperation xmi:id="_G2kbMNNZEeO3BMrS5MLVBA" name="onCreate" visibility="protected">
+              <ownedParameter xmi:id="_G2kbMdNZEeO3BMrS5MLVBA" name="savedInstanceState" type="_Gz3sgNNZEeO3BMrS5MLVBA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_G2m3cdNZEeO3BMrS5MLVBA" name="onCreateOptionsMenu" visibility="public">
+              <ownedParameter xmi:id="_G2m3ctNZEeO3BMrS5MLVBA" name="menu" type="_Gz3shNNZEeO3BMrS5MLVBA"/>
+              <ownedParameter xmi:id="_G2m3c9NZEeO3BMrS5MLVBA" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_GzHekNNZEeO3BMrS5MLVBA" name="ContextAwareApplicaiton">
+            <generalization xmi:id="_G2osoNNZEeO3BMrS5MLVBA" general="_Gz5hsNNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G2p6wNNZEeO3BMrS5MLVBA" name="KEY" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_G2p6wdNZEeO3BMrS5MLVBA" value="YUYjQfFGOZ9kGRGxra36iMXy"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_G2sXANNZEeO3BMrS5MLVBA" name="mApplicationInstance" visibility="private" isStatic="true" type="_GzHekNNZEeO3BMrS5MLVBA" association="_G7fXcNNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G2uzQNNZEeO3BMrS5MLVBA" name="mBMapManager" visibility="private" type="_Gz6IwdNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G2xPgNNZEeO3BMrS5MLVBA" name="mIsKeyValid" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_G2xPgdNZEeO3BMrS5MLVBA" value="true"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_G20S0NNZEeO3BMrS5MLVBA" name="mLocationHandler" visibility="private" type="_Gz5hstNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G22vENNZEeO3BMrS5MLVBA" name="mWeatherHandler" visibility="private" type="_Gz5hstNZEeO3BMrS5MLVBA"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_GzKh4NNZEeO3BMrS5MLVBA" name="MyMKGeneralListener">
+              <ownedOperation xmi:id="_G3FYkNNZEeO3BMrS5MLVBA" name="onGetNetworkState" visibility="public">
+                <ownedParameter xmi:id="_G3FYkdNZEeO3BMrS5MLVBA" name="iError">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_G3GmsNNZEeO3BMrS5MLVBA" name="onGetPermissionState" visibility="public">
+                <ownedParameter xmi:id="_G3GmsdNZEeO3BMrS5MLVBA" name="iError">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+            </nestedClassifier>
+            <ownedOperation xmi:id="_G239MNNZEeO3BMrS5MLVBA" name="onCreate" visibility="public"/>
+            <ownedOperation xmi:id="_G25LUNNZEeO3BMrS5MLVBA" name="GetInstance" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_G25LUdNZEeO3BMrS5MLVBA" name="return" type="_GzHekNNZEeO3BMrS5MLVBA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_G27AgNNZEeO3BMrS5MLVBA" name="setBMapManager" visibility="public">
+              <ownedParameter xmi:id="_G27AgdNZEeO3BMrS5MLVBA" name="bMapManager" type="_Gz6IwdNZEeO3BMrS5MLVBA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_G281sNNZEeO3BMrS5MLVBA" name="getBMapManager" visibility="public">
+              <ownedParameter xmi:id="_G281sdNZEeO3BMrS5MLVBA" name="return" type="_Gz6IwdNZEeO3BMrS5MLVBA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_G2-D0NNZEeO3BMrS5MLVBA" name="getKey" visibility="public">
+              <ownedParameter xmi:id="_G2-D0dNZEeO3BMrS5MLVBA" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_G2_5ANNZEeO3BMrS5MLVBA" name="setLoactionHandler" visibility="public">
+              <ownedParameter xmi:id="_G2_5AdNZEeO3BMrS5MLVBA" name="handler" type="_Gz5hstNZEeO3BMrS5MLVBA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_G3BHINNZEeO3BMrS5MLVBA" name="getLocationHandler" visibility="public">
+              <ownedParameter xmi:id="_G3BHIdNZEeO3BMrS5MLVBA" name="return" type="_Gz5hstNZEeO3BMrS5MLVBA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_G3C8UNNZEeO3BMrS5MLVBA" name="initBMapManager" visibility="private">
+              <ownedParameter xmi:id="_G3C8UdNZEeO3BMrS5MLVBA" name="context" type="_Gz5hsdNZEeO3BMrS5MLVBA"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_GzNlMNNZEeO3BMrS5MLVBA" name="BaiduMapTest">
+            <generalization xmi:id="_G3Ib4NNZEeO3BMrS5MLVBA" general="_Gz6IxdNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G3PJkNNZEeO3BMrS5MLVBA" name="TAG" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3PJkdNZEeO3BMrS5MLVBA" value="BaiduMapTest"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_G3XscNNZEeO3BMrS5MLVBA" name="LAT_BEIJING" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_G3XscdNZEeO3BMrS5MLVBA"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_G3gPUNNZEeO3BMrS5MLVBA" name="LON_BEIJING" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_G3gPUdNZEeO3BMrS5MLVBA"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_G3pZQNNZEeO3BMrS5MLVBA" name="NEARBY_RADIUS" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_G3pZQdNZEeO3BMrS5MLVBA" value="5000"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_G3xVENNZEeO3BMrS5MLVBA" name="mApp" visibility="private" type="_GzHekNNZEeO3BMrS5MLVBA" association="_G7f-gNNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G3538NNZEeO3BMrS5MLVBA" name="mBaiduLocationUtil" visibility="private" type="_G0APYdNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G4BzwNNZEeO3BMrS5MLVBA" name="mBMapManager" visibility="private" type="_Gz6IwdNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G4K9sNNZEeO3BMrS5MLVBA" name="mMapView" visibility="private" type="_GzqRINNZEeO3BMrS5MLVBA" association="_G7f-gtNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G4S5gNNZEeO3BMrS5MLVBA" name="mMapController" visibility="private" type="_Gz8lBNNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G4a1UNNZEeO3BMrS5MLVBA" name="mMKSearch" visibility="private" type="_Gz-aM9NZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G4ixINNZEeO3BMrS5MLVBA" name="mAutoCompleteTextView" visibility="private" type="_Gz798dNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G4qs8NNZEeO3BMrS5MLVBA" name="mSuggestArrayAdapter" visibility="private" type="_G4mbgNNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G4xaoNNZEeO3BMrS5MLVBA" name="mCurrentLocation" visibility="private" type="_Gz8lAdNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G44vYNNZEeO3BMrS5MLVBA" name="mCurrentPoint" visibility="private" type="_G0APYNNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G4_dENNZEeO3BMrS5MLVBA" name="mCitySearchButton" visibility="private" type="_Gz798tNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G5GKwNNZEeO3BMrS5MLVBA" name="mNearbySearchButton" visibility="private" type="_Gz798tNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G5M4cNNZEeO3BMrS5MLVBA" name="mMyLocationButton" visibility="private" type="_Gz798tNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G5UNMNNZEeO3BMrS5MLVBA" name="mPopupTextView" visibility="private" type="_Gz7989NZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G5mhENNZEeO3BMrS5MLVBA" name="mPopupInfo" visibility="private" type="_Gz3shdNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G5tOwNNZEeO3BMrS5MLVBA" name="mPopupLeft" visibility="private" type="_Gz3shdNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G51KkNNZEeO3BMrS5MLVBA" name="mPopupRight" visibility="private" type="_Gz3shdNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G57RMNNZEeO3BMrS5MLVBA" name="mPopupOverlay" visibility="private" type="_Gz9zIdNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G6BX0NNZEeO3BMrS5MLVBA" name="mLocationOverlay" visibility="private" type="_GzfSANNZEeO3BMrS5MLVBA" association="_G7f-hNNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G6IFgNNZEeO3BMrS5MLVBA" name="mItemizedOverlay" visibility="private" type="_GzkxkNNZEeO3BMrS5MLVBA" association="_G7f-htNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G6OMINNZEeO3BMrS5MLVBA" name="mCurrentItem" visibility="private" type="_Gz9MEtNZEeO3BMrS5MLVBA"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_GzYkUNNZEeO3BMrS5MLVBA" name="MyPoiOverlay" visibility="private">
+              <generalization xmi:id="_G6790NNZEeO3BMrS5MLVBA" general="_Gz9ME9NZEeO3BMrS5MLVBA"/>
+              <ownedAttribute xmi:id="_G6_BINNZEeO3BMrS5MLVBA" name="mSearch" visibility="private" type="_Gz-aM9NZEeO3BMrS5MLVBA"/>
+              <ownedOperation xmi:id="_G7CEcNNZEeO3BMrS5MLVBA" name="onTap" visibility="protected">
+                <ownedParameter xmi:id="_G7CEcdNZEeO3BMrS5MLVBA" name="i">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_G7CEctNZEeO3BMrS5MLVBA" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_GzfSANNZEeO3BMrS5MLVBA" name="LocationOverlay" visibility="private">
+              <generalization xmi:id="_G7FHwNNZEeO3BMrS5MLVBA" general="_Gz9MEdNZEeO3BMrS5MLVBA"/>
+              <ownedOperation xmi:id="_G7FHwdNZEeO3BMrS5MLVBA" name="dispatchTap" visibility="protected">
+                <ownedParameter xmi:id="_G7FHwtNZEeO3BMrS5MLVBA" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_GzkxkNNZEeO3BMrS5MLVBA" name="MyItemizedOverlay" visibility="private">
+              <ownedOperation xmi:id="_G7IyINNZEeO3BMrS5MLVBA" name="onTap" visibility="protected">
+                <ownedParameter xmi:id="_G7IyIdNZEeO3BMrS5MLVBA" name="index">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_G7IyItNZEeO3BMrS5MLVBA" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_G7NDkNNZEeO3BMrS5MLVBA" name="onTap" visibility="public">
+                <ownedParameter xmi:id="_G7NDkdNZEeO3BMrS5MLVBA" name="pt" type="_G0APYNNZEeO3BMrS5MLVBA"/>
+                <ownedParameter xmi:id="_G7NDktNZEeO3BMrS5MLVBA" name="mMapView" type="_Gz9MENNZEeO3BMrS5MLVBA"/>
+                <ownedParameter xmi:id="_G7NDk9NZEeO3BMrS5MLVBA" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+            </nestedClassifier>
+            <ownedOperation xmi:id="_G6SdkNNZEeO3BMrS5MLVBA" name="onCreate" visibility="protected">
+              <ownedParameter xmi:id="_G6SdkdNZEeO3BMrS5MLVBA" name="savedInstanceState" type="_Gz3sgNNZEeO3BMrS5MLVBA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_G6Vg4NNZEeO3BMrS5MLVBA" name="onResume" visibility="protected"/>
+            <ownedOperation xmi:id="_G6ZLQNNZEeO3BMrS5MLVBA" name="onPause" visibility="protected"/>
+            <ownedOperation xmi:id="_G6cOkNNZEeO3BMrS5MLVBA" name="onStop" visibility="protected"/>
+            <ownedOperation xmi:id="_G6f48NNZEeO3BMrS5MLVBA" name="onDestroy" visibility="protected"/>
+            <ownedOperation xmi:id="_G6i8QNNZEeO3BMrS5MLVBA" name="onSaveInstanceState" visibility="protected">
+              <ownedParameter xmi:id="_G6i8QdNZEeO3BMrS5MLVBA" name="savedInstanceState" type="_Gz3sgNNZEeO3BMrS5MLVBA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_G6mmoNNZEeO3BMrS5MLVBA" name="onRestoreInstanceState" visibility="protected">
+              <ownedParameter xmi:id="_G6mmodNZEeO3BMrS5MLVBA" name="savedInstanceState" type="_Gz3sgNNZEeO3BMrS5MLVBA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_G6pp8NNZEeO3BMrS5MLVBA" name="processOnReceiveNewLocation" visibility="private"/>
+            <ownedOperation xmi:id="_G6stQNNZEeO3BMrS5MLVBA" name="initMapView" visibility="private">
+              <ownedParameter xmi:id="_G6stQdNZEeO3BMrS5MLVBA" name="mapView" type="_Gz9MENNZEeO3BMrS5MLVBA"/>
+              <ownedParameter xmi:id="_G6stQtNZEeO3BMrS5MLVBA" name="geoPoint" type="_G0APYNNZEeO3BMrS5MLVBA"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_GzqRINNZEeO3BMrS5MLVBA" name="PopupMapView" visibility="package">
+            <generalization xmi:id="_G6vwkNNZEeO3BMrS5MLVBA" general="_Gz9MENNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G6yz4NNZEeO3BMrS5MLVBA" name="mPopupOverlay" visibility="private" type="_Gz9zIdNZEeO3BMrS5MLVBA"/>
+            <ownedOperation xmi:id="_G62eQNNZEeO3BMrS5MLVBA" name="onTouchEvent" visibility="public">
+              <ownedParameter xmi:id="_G62eQdNZEeO3BMrS5MLVBA" name="event" type="_Gz798NNZEeO3BMrS5MLVBA"/>
+              <ownedParameter xmi:id="_G62eQtNZEeO3BMrS5MLVBA" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_G65hkNNZEeO3BMrS5MLVBA" name="setPopupOverlay" visibility="public">
+              <ownedParameter xmi:id="_G65hkdNZEeO3BMrS5MLVBA" name="popupOverlay" type="_Gz9zIdNZEeO3BMrS5MLVBA"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_Gzw-0NNZEeO3BMrS5MLVBA" name="SharedDataSensorsWeatherTest">
+            <generalization xmi:id="_G7Qt8NNZEeO3BMrS5MLVBA" general="_Gz6IxdNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G7RVANNZEeO3BMrS5MLVBA" name="TAG" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_G7RVAdNZEeO3BMrS5MLVBA" value="SharedDataAndWeatherTest"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_G7TKMNNZEeO3BMrS5MLVBA" name="mSensorsUtil" visibility="private" type="_G0A2cNNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G7UYUNNZEeO3BMrS5MLVBA" name="mReadButton" visibility="private" type="_Gz798tNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G7WNgNNZEeO3BMrS5MLVBA" name="mWeatherButton" visibility="private" type="_Gz798tNZEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_G7XboNNZEeO3BMrS5MLVBA" name="mTextView" visibility="private" type="_Gz7989NZEeO3BMrS5MLVBA"/>
+            <ownedOperation xmi:id="_G7YpwNNZEeO3BMrS5MLVBA" name="onCreate" visibility="protected">
+              <ownedParameter xmi:id="_G7YpwdNZEeO3BMrS5MLVBA" name="savedInstanceState" type="_Gz3sgNNZEeO3BMrS5MLVBA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_G7Z34NNZEeO3BMrS5MLVBA" name="onResume" visibility="protected"/>
+            <ownedOperation xmi:id="_G7ae8NNZEeO3BMrS5MLVBA" name="onPause" visibility="protected"/>
+            <ownedOperation xmi:id="_G7btENNZEeO3BMrS5MLVBA" name="onStop" visibility="protected"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_G7fXcNNZEeO3BMrS5MLVBA" memberEnd="_G2sXANNZEeO3BMrS5MLVBA _G7fXcdNZEeO3BMrS5MLVBA">
+            <ownedEnd xmi:id="_G7fXcdNZEeO3BMrS5MLVBA" name="ContextAwareApplicaiton" type="_GzHekNNZEeO3BMrS5MLVBA" association="_G7fXcNNZEeO3BMrS5MLVBA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_G7f-gNNZEeO3BMrS5MLVBA" memberEnd="_G3xVENNZEeO3BMrS5MLVBA _G7f-gdNZEeO3BMrS5MLVBA">
+            <ownedEnd xmi:id="_G7f-gdNZEeO3BMrS5MLVBA" name="BaiduMapTest" type="_GzNlMNNZEeO3BMrS5MLVBA" association="_G7f-gNNZEeO3BMrS5MLVBA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_G7f-gtNZEeO3BMrS5MLVBA" memberEnd="_G4K9sNNZEeO3BMrS5MLVBA _G7f-g9NZEeO3BMrS5MLVBA">
+            <ownedEnd xmi:id="_G7f-g9NZEeO3BMrS5MLVBA" name="BaiduMapTest" type="_GzNlMNNZEeO3BMrS5MLVBA" association="_G7f-gtNZEeO3BMrS5MLVBA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_G7f-hNNZEeO3BMrS5MLVBA" memberEnd="_G6BX0NNZEeO3BMrS5MLVBA _G7f-hdNZEeO3BMrS5MLVBA">
+            <ownedEnd xmi:id="_G7f-hdNZEeO3BMrS5MLVBA" name="BaiduMapTest" type="_GzNlMNNZEeO3BMrS5MLVBA" association="_G7f-hNNZEeO3BMrS5MLVBA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_G7f-htNZEeO3BMrS5MLVBA" memberEnd="_G6IFgNNZEeO3BMrS5MLVBA _G7f-h9NZEeO3BMrS5MLVBA">
+            <ownedEnd xmi:id="_G7f-h9NZEeO3BMrS5MLVBA" name="BaiduMapTest" type="_GzNlMNNZEeO3BMrS5MLVBA" association="_G7f-htNZEeO3BMrS5MLVBA"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_Gz4TldNZEeO3BMrS5MLVBA" name="R"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gz46oNNZEeO3BMrS5MLVBA" name="service">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Gz46odNZEeO3BMrS5MLVBA" name="SendContextDataService"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Gz46otNZEeO3BMrS5MLVBA" name="SendUserInfoDataService"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gz46o9NZEeO3BMrS5MLVBA" name="util">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Gz46pNNZEeO3BMrS5MLVBA" name="SharedDataUtil"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_G0APYdNZEeO3BMrS5MLVBA" name="BaiduLocationUtil"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_G0APYtNZEeO3BMrS5MLVBA" name="BaiduMapUtil"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_G0A2cNNZEeO3BMrS5MLVBA" name="SensorsUtil"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_G0A2cdNZEeO3BMrS5MLVBA" name="WeatherWSUtil"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Gz5htNNZEeO3BMrS5MLVBA" name="baidu">
+      <packagedElement xmi:type="uml:Package" xmi:id="_Gz6IwNNZEeO3BMrS5MLVBA" name="mapapi">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_Gz6IwdNZEeO3BMrS5MLVBA" name="BMapManager"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_Gz6IwtNZEeO3BMrS5MLVBA" name="MKGeneralListener"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gz6Iw9NZEeO3BMrS5MLVBA" name="map">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Gz6IxNNZEeO3BMrS5MLVBA" name="MKEvent"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Gz8lAtNZEeO3BMrS5MLVBA" name="ItemizedOverlay"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Gz8lA9NZEeO3BMrS5MLVBA" name="LocationData"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Gz8lBNNZEeO3BMrS5MLVBA" name="MapController"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Gz9MENNZEeO3BMrS5MLVBA" name="MapView"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Gz9MEdNZEeO3BMrS5MLVBA" name="MyLocationOverlay"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Gz9MEtNZEeO3BMrS5MLVBA" name="OverlayItem"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Gz9ME9NZEeO3BMrS5MLVBA" name="PoiOverlay"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Gz9zINNZEeO3BMrS5MLVBA" name="PopupClickListener"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Gz9zIdNZEeO3BMrS5MLVBA" name="PopupOverlay"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gz9zItNZEeO3BMrS5MLVBA" name="search">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Gz9zI9NZEeO3BMrS5MLVBA" name="MKAddrInfo"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Gz9zJNNZEeO3BMrS5MLVBA" name="MKBusLineResult"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Gz-aMNNZEeO3BMrS5MLVBA" name="MKDrivingRouteResult"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Gz-aMdNZEeO3BMrS5MLVBA" name="MKPoiInfo"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Gz-aMtNZEeO3BMrS5MLVBA" name="MKPoiResult"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Gz-aM9NZEeO3BMrS5MLVBA" name="MKSearch"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Gz_BQNNZEeO3BMrS5MLVBA" name="MKSearchListener"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Gz_BQdNZEeO3BMrS5MLVBA" name="MKShareUrlResult"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Gz_BQtNZEeO3BMrS5MLVBA" name="MKSuggestionInfo"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Gz_oUNNZEeO3BMrS5MLVBA" name="MKSuggestionResult"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Gz_oUdNZEeO3BMrS5MLVBA" name="MKTransitRouteResult"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Gz_oUtNZEeO3BMrS5MLVBA" name="MKWalkingRouteResult"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Gz8lANNZEeO3BMrS5MLVBA" name="location">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_Gz8lAdNZEeO3BMrS5MLVBA" name="BDLocation"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Gz_oU9NZEeO3BMrS5MLVBA" name="platform">
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gz_oVNNZEeO3BMrS5MLVBA" name="comapi">
+          <packagedElement xmi:type="uml:Package" xmi:id="_Gz_oVdNZEeO3BMrS5MLVBA" name="basestruct">
+            <packagedElement xmi:type="uml:DataType" xmi:id="_G0APYNNZEeO3BMrS5MLVBA" name="GeoPoint"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_Gz0CINNZEeO3BMrS5MLVBA" name="android">
+    <packagedElement xmi:type="uml:Package" xmi:id="_Gz0CIdNZEeO3BMrS5MLVBA" name="app">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Gz3FcNNZEeO3BMrS5MLVBA" name="ListActivity"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Gz5hsNNZEeO3BMrS5MLVBA" name="Application"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Gz6IxdNZEeO3BMrS5MLVBA" name="Activity"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Gz3FcdNZEeO3BMrS5MLVBA" name="content">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Gz3FctNZEeO3BMrS5MLVBA" name="Intent"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Gz5hsdNZEeO3BMrS5MLVBA" name="Context"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Gz3Fc9NZEeO3BMrS5MLVBA" name="os">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Gz3sgNNZEeO3BMrS5MLVBA" name="Bundle"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Gz5hstNZEeO3BMrS5MLVBA" name="Handler"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Gz7W4NNZEeO3BMrS5MLVBA" name="Message"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Gz3sgdNZEeO3BMrS5MLVBA" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Gz3sgtNZEeO3BMrS5MLVBA" name="Log"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Gz7W5NNZEeO3BMrS5MLVBA" name="AttributeSet"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Gz3sg9NZEeO3BMrS5MLVBA" name="view">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Gz3shNNZEeO3BMrS5MLVBA" name="Menu"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Gz3shdNZEeO3BMrS5MLVBA" name="View"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Gz798NNZEeO3BMrS5MLVBA" name="MotionEvent"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Gz3shtNZEeO3BMrS5MLVBA" name="widget">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Gz4TkNNZEeO3BMrS5MLVBA" name="AdapterView"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Gz4TkdNZEeO3BMrS5MLVBA" name="AdapterView">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_Gz4TktNZEeO3BMrS5MLVBA" name="OnItemClickListener"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Gz4Tk9NZEeO3BMrS5MLVBA" name="ArrayAdapter"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Gz4TlNNZEeO3BMrS5MLVBA" name="ListView"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Gz5hs9NZEeO3BMrS5MLVBA" name="Toast"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Gz798dNZEeO3BMrS5MLVBA" name="AutoCompleteTextView"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Gz798tNZEeO3BMrS5MLVBA" name="Button"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Gz7989NZEeO3BMrS5MLVBA" name="TextView"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Gz6v0NNZEeO3BMrS5MLVBA" name="graphics">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Gz6v0dNZEeO3BMrS5MLVBA" name="Bitmap"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Gz6v0tNZEeO3BMrS5MLVBA" name="drawable">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_Gz6v09NZEeO3BMrS5MLVBA" name="Drawable"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Gz7W4dNZEeO3BMrS5MLVBA" name="text">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Gz7W4tNZEeO3BMrS5MLVBA" name="Editable"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Gz7W49NZEeO3BMrS5MLVBA" name="TextWatcher"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_G4mbgNNZEeO3BMrS5MLVBA" name="ArrayAdapter&lt;String>"/>
+</uml:Model>

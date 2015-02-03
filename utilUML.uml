@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_PcmK8NNbEeO3BMrS5MLVBA">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_Pdh_ENNbEeO3BMrS5MLVBA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_PdkbUNNbEeO3BMrS5MLVBA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <elementImport xmi:id="_PfwMoNNbEeO3BMrS5MLVBA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_Pf1FINNbEeO3BMrS5MLVBA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_PcmK8dNbEeO3BMrS5MLVBA" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_PcmK8tNbEeO3BMrS5MLVBA" name="ernest">
+      <packagedElement xmi:type="uml:Package" xmi:id="_PcmK89NbEeO3BMrS5MLVBA" name="mobilecontextaware">
+        <packagedElement xmi:type="uml:Package" xmi:id="_PcmK9NNbEeO3BMrS5MLVBA" name="util">
+          <packagedElement xmi:type="uml:Class" xmi:id="_PcnZENNbEeO3BMrS5MLVBA" name="BaiduMapUtil">
+            <ownedOperation xmi:id="_Pc7iINNbEeO3BMrS5MLVBA" name="getBitmapFromView" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_Pc7iIdNbEeO3BMrS5MLVBA" name="view" type="_Pc3QsdNbEeO3BMrS5MLVBA"/>
+              <ownedParameter xmi:id="_Pc7iItNbEeO3BMrS5MLVBA" name="return" type="_Pc2potNbEeO3BMrS5MLVBA" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_PconMNNbEeO3BMrS5MLVBA" name="SensorsUtil">
+            <ownedAttribute xmi:id="_PdjNMNNbEeO3BMrS5MLVBA" name="TAG" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_PdjNMdNbEeO3BMrS5MLVBA" value="SensorsUtil"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_Pdm3kNNbEeO3BMrS5MLVBA" name="SENSOR_DELAY" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_Pdp64NNbEeO3BMrS5MLVBA" name="mSensorManager" visibility="private" type="_Pc33wdNbEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_Pd810NNbEeO3BMrS5MLVBA" name="mContext" visibility="private" type="_Pc3Qs9NbEeO3BMrS5MLVBA"/>
+            <ownedOperation xmi:id="_Pd-D8NNbEeO3BMrS5MLVBA" name="registerAllSensorListener" visibility="public"/>
+            <ownedOperation xmi:id="_Pd_SENNbEeO3BMrS5MLVBA" name="unRegisterSensorListener" visibility="public"/>
+            <ownedOperation xmi:id="_PeAgMNNbEeO3BMrS5MLVBA" name="onAccuracyChanged" visibility="public">
+              <ownedParameter xmi:id="_PeAgMdNbEeO3BMrS5MLVBA" name="sensor" type="_Pc3QtdNbEeO3BMrS5MLVBA"/>
+              <ownedParameter xmi:id="_PeAgMtNbEeO3BMrS5MLVBA" name="accuracy">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_PeBHQNNbEeO3BMrS5MLVBA" name="onSensorChanged" visibility="public">
+              <ownedParameter xmi:id="_PeBHQdNbEeO3BMrS5MLVBA" name="event" type="_Pc3QttNbEeO3BMrS5MLVBA"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_PcrDcNNbEeO3BMrS5MLVBA" name="HttpUtil">
+            <ownedAttribute xmi:id="_PeDjgNNbEeO3BMrS5MLVBA" name="TAG" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_PeDjgdNbEeO3BMrS5MLVBA" value="HttpUtil"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_PeFYsNNbEeO3BMrS5MLVBA" name="Post" visibility="public" isStatic="true">
+              <ownedComment xmi:id="_PeJDENNbEeO3BMrS5MLVBA">
+                <body>/** 
+ * @param url ��ҳ��ַ   
+ * @param params ����   
+ * @return ������ҳ����   
+ * @throws ExceptionEx.
+ * String data;
+ * List&lt;NameValuePair> params = new ArrayList&lt;NameValuePair>();   
+ * params.add(new BasicNameValuePair(&quot;username&quot;, username));   
+ * params.add(new BasicNameValuePair(&quot;password&quot;, password));   
+ * data = HttpUtils.Post(&quot;http://10.0.2.2:8080/Auction/LoginAction.action&quot;, params);
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_PeFYsdNbEeO3BMrS5MLVBA" name="url">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_PeFYstNbEeO3BMrS5MLVBA" name="params" type="_Pc33xtNbEeO3BMrS5MLVBA"/>
+              <ownedParameter xmi:id="_PeFYs9NbEeO3BMrS5MLVBA" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_PeJDEdNbEeO3BMrS5MLVBA" name="Get" visibility="public" isStatic="true">
+              <ownedComment xmi:id="_PeKRMNNbEeO3BMrS5MLVBA">
+                <body>/** 
+ * @param url��ַ   
+ * @return ������ҳ����   
+ * @throws ExceptionEx.
+ * String data;   
+ * data = HttpUtils.Get(&quot;http://10.0.2.2:8080/Auction/LoginAction.action?username=&quot;+   
+ * username + &quot;&amp;password=&quot; + password + &quot;&quot;);
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_PeJDEtNbEeO3BMrS5MLVBA" name="url">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_PeJDE9NbEeO3BMrS5MLVBA" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_PcuGwNNbEeO3BMrS5MLVBA" name="SharedDataUtil">
+            <ownedAttribute xmi:id="_PeMtcNNbEeO3BMrS5MLVBA" name="TAG" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_PeMtcdNbEeO3BMrS5MLVBA" value="SharedDataUtil"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PeQ-4NNbEeO3BMrS5MLVBA" name="SHAREDPREFERENCES_FILE" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_PeQ-4dNbEeO3BMrS5MLVBA" value="mobilecontextaware"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PeWecNNbEeO3BMrS5MLVBA" name="IMEI" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_PeWecdNbEeO3BMrS5MLVBA" value="userid"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_Peav4NNbEeO3BMrS5MLVBA" name="USER_NAME" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_Peav4dNbEeO3BMrS5MLVBA" value="username"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PegPcNNbEeO3BMrS5MLVBA" name="USER_PASSWORD" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_PegPcdNbEeO3BMrS5MLVBA" value="userpassword"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_Pej50NNbEeO3BMrS5MLVBA" name="CUR_DATE_TIME" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_Pej50dNbEeO3BMrS5MLVBA" value="datetime"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PenkMNNbEeO3BMrS5MLVBA" name="CUR_PROVINCE" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_PenkMdNbEeO3BMrS5MLVBA" value="province"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PerOkNNbEeO3BMrS5MLVBA" name="CUR_CITY" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_PerOkdNbEeO3BMrS5MLVBA" value="city"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PevgANNbEeO3BMrS5MLVBA" name="CUR_DISTRICT" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_PevgAdNbEeO3BMrS5MLVBA" value="district"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PezKYNNbEeO3BMrS5MLVBA" name="CUR_ADDR" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_PezKYdNbEeO3BMrS5MLVBA" value="address"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_Pe20wNNbEeO3BMrS5MLVBA" name="CUR_LAT" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_Pe20wdNbEeO3BMrS5MLVBA" value="latitude"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_Pe7GMNNbEeO3BMrS5MLVBA" name="CUR_LON" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_Pe7GMdNbEeO3BMrS5MLVBA" value="longtitude"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_Pe-wkNNbEeO3BMrS5MLVBA" name="CUR_RADIUS" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_Pe-wkdNbEeO3BMrS5MLVBA" value="radius"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PfCa8NNbEeO3BMrS5MLVBA" name="CUR_TYPE" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_PfCa8dNbEeO3BMrS5MLVBA" value="nettype"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PfGFUNNbEeO3BMrS5MLVBA" name="CUR_OPERATOR" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_PfGFUdNbEeO3BMrS5MLVBA" value="operator"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PfJIoNNbEeO3BMrS5MLVBA" name="REALTIME_TEMP" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_PfJIodNbEeO3BMrS5MLVBA" value="realtimetemperature"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PfMzANNbEeO3BMrS5MLVBA" name="TODAY_TEMP_RANGE" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_PfMzAdNbEeO3BMrS5MLVBA" value="temperaturerange"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PfQdYNNbEeO3BMrS5MLVBA" name="CUR_TEMP" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_PfQdYdNbEeO3BMrS5MLVBA" value="temperature"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PfUHwNNbEeO3BMrS5MLVBA" name="CUR_LIGHT" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_PfUHwdNbEeO3BMrS5MLVBA" value="light"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PfXyINNbEeO3BMrS5MLVBA" name="CUR_ACCEL_X" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_PfXyIdNbEeO3BMrS5MLVBA" value="x"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PfbcgNNbEeO3BMrS5MLVBA" name="CUR_ACCEL_Y" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_PfbcgdNbEeO3BMrS5MLVBA" value="y"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PffG4NNbEeO3BMrS5MLVBA" name="CUR_ACCEL_Z" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_PffG4dNbEeO3BMrS5MLVBA" value="z"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PfixQNNbEeO3BMrS5MLVBA" name="CUR_WEATHER" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_PfixQdNbEeO3BMrS5MLVBA" value="CurrentWeather"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PfmboNNbEeO3BMrS5MLVBA" name="TODAY_WEATHER" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_PfmbodNbEeO3BMrS5MLVBA" value="TodayWeather"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PfqGANNbEeO3BMrS5MLVBA" name="mSharedPreferences" visibility="private" isStatic="true" type="_Pc5F49NbEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_PfuXcNNbEeO3BMrS5MLVBA" name="mEditor" visibility="private" isStatic="true" type="_PfsiQNNbEeO3BMrS5MLVBA"/>
+            <ownedOperation xmi:id="_PfwModNbEeO3BMrS5MLVBA" name="WriteDefaultUserInfo" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_PfwMotNbEeO3BMrS5MLVBA" name="context" type="_Pc3Qs9NbEeO3BMrS5MLVBA"/>
+              <ownedParameter xmi:id="_PfwMo9NbEeO3BMrS5MLVBA" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Pfyo4NNbEeO3BMrS5MLVBA" name="WriteCurLocationInfos" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_Pfyo4dNbEeO3BMrS5MLVBA" name="context" type="_Pc3Qs9NbEeO3BMrS5MLVBA"/>
+              <ownedParameter xmi:id="_Pfyo4tNbEeO3BMrS5MLVBA" name="location" type="_Pc5F6NNbEeO3BMrS5MLVBA"/>
+              <ownedParameter xmi:id="_Pfyo49NbEeO3BMrS5MLVBA" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Pf1FIdNbEeO3BMrS5MLVBA" name="WriteCurTemperature" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_Pf1FItNbEeO3BMrS5MLVBA" name="context" type="_Pc3Qs9NbEeO3BMrS5MLVBA"/>
+              <ownedParameter xmi:id="_Pf1FI9NbEeO3BMrS5MLVBA" name="temp">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_Pf1FJNNbEeO3BMrS5MLVBA" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Pf26UNNbEeO3BMrS5MLVBA" name="WriteCurLight" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_Pf26UdNbEeO3BMrS5MLVBA" name="context" type="_Pc3Qs9NbEeO3BMrS5MLVBA"/>
+              <ownedParameter xmi:id="_Pf26UtNbEeO3BMrS5MLVBA" name="light">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_Pf26U9NbEeO3BMrS5MLVBA" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Pf5WkNNbEeO3BMrS5MLVBA" name="WriteCurAcceleration" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_Pf5WkdNbEeO3BMrS5MLVBA" name="context" type="_Pc3Qs9NbEeO3BMrS5MLVBA"/>
+              <ownedParameter xmi:id="_Pf5WktNbEeO3BMrS5MLVBA" name="values">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Pf5Wk9NbEeO3BMrS5MLVBA" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Pf5WlNNbEeO3BMrS5MLVBA"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_Pf5WldNbEeO3BMrS5MLVBA" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Pf7y0NNbEeO3BMrS5MLVBA" name="WriteCurWeatherInfos" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_Pf7y0dNbEeO3BMrS5MLVBA" name="context" type="_Pc3Qs9NbEeO3BMrS5MLVBA"/>
+              <ownedParameter xmi:id="_Pf7y0tNbEeO3BMrS5MLVBA" name="cur">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_Pf7y09NbEeO3BMrS5MLVBA" name="today">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_Pf7y1NNbEeO3BMrS5MLVBA" name="temp">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_Pf7y1dNbEeO3BMrS5MLVBA" name="tempRange">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_Pf7y1tNbEeO3BMrS5MLVBA" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Pf-PENNbEeO3BMrS5MLVBA" name="WriteIMEI" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_Pf-PEdNbEeO3BMrS5MLVBA" name="context" type="_Pc3Qs9NbEeO3BMrS5MLVBA"/>
+              <ownedParameter xmi:id="_Pf-PEtNbEeO3BMrS5MLVBA" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_PgAEQNNbEeO3BMrS5MLVBA" name="GetIMEI" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_PgAEQdNbEeO3BMrS5MLVBA" name="context" type="_Pc3Qs9NbEeO3BMrS5MLVBA"/>
+              <ownedParameter xmi:id="_PgAEQtNbEeO3BMrS5MLVBA" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_PgCggNNbEeO3BMrS5MLVBA" name="GetCurDistrictOrCity" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_PgCggdNbEeO3BMrS5MLVBA" name="context" type="_Pc3Qs9NbEeO3BMrS5MLVBA"/>
+              <ownedParameter xmi:id="_PgCggtNbEeO3BMrS5MLVBA" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_PgEVsNNbEeO3BMrS5MLVBA" name="GetDataUpdateTest" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_PgEVsdNbEeO3BMrS5MLVBA" name="context" type="_Pc3Qs9NbEeO3BMrS5MLVBA"/>
+              <ownedParameter xmi:id="_PgEVstNbEeO3BMrS5MLVBA" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_PgGx8NNbEeO3BMrS5MLVBA" name="ReadSharedData" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_PgGx8dNbEeO3BMrS5MLVBA" name="context" type="_Pc3Qs9NbEeO3BMrS5MLVBA"/>
+              <ownedParameter xmi:id="_PgGx8tNbEeO3BMrS5MLVBA" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_PgJOMNNbEeO3BMrS5MLVBA" name="GetUserInfoNameValuePairList" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_PgJOMdNbEeO3BMrS5MLVBA" name="context" type="_Pc3Qs9NbEeO3BMrS5MLVBA"/>
+              <ownedParameter xmi:id="_PgJOMtNbEeO3BMrS5MLVBA" name="return" type="_Pc33xtNbEeO3BMrS5MLVBA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_PgLDYNNbEeO3BMrS5MLVBA" name="GetContextNameValuePairList" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_PgLDYdNbEeO3BMrS5MLVBA" name="context" type="_Pc3Qs9NbEeO3BMrS5MLVBA"/>
+              <ownedParameter xmi:id="_PgLDYtNbEeO3BMrS5MLVBA" name="return" type="_Pc33xtNbEeO3BMrS5MLVBA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_PgOtwNNbEeO3BMrS5MLVBA" name="initSharedData" visibility="private" isStatic="true">
+              <ownedParameter xmi:id="_PgOtwdNbEeO3BMrS5MLVBA" name="context" type="_Pc3Qs9NbEeO3BMrS5MLVBA"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_PcxKENNbEeO3BMrS5MLVBA" name="DateTimeUtil">
+            <ownedOperation xmi:id="_PgQi8NNbEeO3BMrS5MLVBA" name="GetCurDateTime" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_PgQi8dNbEeO3BMrS5MLVBA" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_PcyYMNNbEeO3BMrS5MLVBA" name="BaiduLocationUtil">
+            <ownedAttribute xmi:id="_PgSYINNbEeO3BMrS5MLVBA" name="TAG" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_PgSYIdNbEeO3BMrS5MLVBA" value="BaiduLocationUtil"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PgTmQNNbEeO3BMrS5MLVBA" name="NEW_LOC_MSG" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_PgTmQdNbEeO3BMrS5MLVBA"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PgVbcNNbEeO3BMrS5MLVBA" name="COORTYPE" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_PgVbcdNbEeO3BMrS5MLVBA" value="bd09ll"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PgXQoNNbEeO3BMrS5MLVBA" name="REQ_INTERVAL" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PgYewNNbEeO3BMrS5MLVBA" name="MAX_POI_NUM" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_PgYewdNbEeO3BMrS5MLVBA" value="10"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PgaT8NNbEeO3BMrS5MLVBA" name="POI_DISDANCE" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_PgaT8dNbEeO3BMrS5MLVBA"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PgbiENNbEeO3BMrS5MLVBA" name="mLocationClient" visibility="private" type="_Pc5s9dNbEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_PgdXQNNbEeO3BMrS5MLVBA" name="mOption" visibility="private" type="_Pc5s9tNbEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_PgelYNNbEeO3BMrS5MLVBA" name="mCurLocation" visibility="private" type="_Pc5F6NNbEeO3BMrS5MLVBA"/>
+            <ownedOperation xmi:id="_PgfzgNNbEeO3BMrS5MLVBA" name="requetLocation" visibility="public">
+              <ownedParameter xmi:id="_PgfzgdNbEeO3BMrS5MLVBA" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_PggakNNbEeO3BMrS5MLVBA" name="getCurLocation" visibility="public">
+              <ownedParameter xmi:id="_PggakdNbEeO3BMrS5MLVBA" name="return" type="_Pc5F6NNbEeO3BMrS5MLVBA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_PghosNNbEeO3BMrS5MLVBA" name="start" visibility="public"/>
+            <ownedOperation xmi:id="_Pgi20NNbEeO3BMrS5MLVBA" name="stop" visibility="public"/>
+            <ownedOperation xmi:id="_Pgjd4NNbEeO3BMrS5MLVBA" name="GetSourceType" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_Pgjd4dNbEeO3BMrS5MLVBA" name="locType">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_Pgjd4tNbEeO3BMrS5MLVBA" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_PgksANNbEeO3BMrS5MLVBA" name="initLocationOption" visibility="private"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_Pc00cNNbEeO3BMrS5MLVBA" name="WeatherWSUtil">
+            <ownedAttribute xmi:id="_PgmhMNNbEeO3BMrS5MLVBA" name="TAG" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_PgmhMdNbEeO3BMrS5MLVBA" value="WeatherWSUtil"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PgoWYNNbEeO3BMrS5MLVBA" name="NEW_WEATHER_MSG" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_PgoWYdNbEeO3BMrS5MLVBA"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PgqLkNNbEeO3BMrS5MLVBA" name="WEATHER_CUR" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_PgqLkdNbEeO3BMrS5MLVBA" value="CurrentWeather"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PgsAwNNbEeO3BMrS5MLVBA" name="WEATHER_TODAY" visibility="public" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_PgsAwdNbEeO3BMrS5MLVBA" value="TodayWeather"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_Pgt18NNbEeO3BMrS5MLVBA" name="SERVICE_NS" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_Pgt18dNbEeO3BMrS5MLVBA" value="http://WebXml.com.cn/"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_PgvrINNbEeO3BMrS5MLVBA" name="SERVICE_URL" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_PgvrIdNbEeO3BMrS5MLVBA" value="http://webservice.webxml.com.cn/WebServices/WeatherWS.asmx"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_PgyHYNNbEeO3BMrS5MLVBA" name="GetWeather" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_PgyHYdNbEeO3BMrS5MLVBA" name="context" type="_Pc3Qs9NbEeO3BMrS5MLVBA"/>
+              <ownedParameter xmi:id="_PgyHYtNbEeO3BMrS5MLVBA" name="city">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_PgyHY9NbEeO3BMrS5MLVBA" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_PgzVgNNbEeO3BMrS5MLVBA" name="getWeatherByCity" visibility="private" isStatic="true">
+              <ownedParameter xmi:id="_PgzVgdNbEeO3BMrS5MLVBA" name="cityName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_PgzVgtNbEeO3BMrS5MLVBA" name="return" type="_Pc6UCNNbEeO3BMrS5MLVBA" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Pc6UANNbEeO3BMrS5MLVBA" name="activity">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Pc6UAdNbEeO3BMrS5MLVBA" name="ContextAwareApplicaiton"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Pc5F5tNbEeO3BMrS5MLVBA" name="baidu">
+      <packagedElement xmi:type="uml:Package" xmi:id="_Pc5F59NbEeO3BMrS5MLVBA" name="location">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_Pc5F6NNbEeO3BMrS5MLVBA" name="BDLocation"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_Pc5s9NNbEeO3BMrS5MLVBA" name="BDLocationListener"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_Pc5s9dNbEeO3BMrS5MLVBA" name="LocationClient"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_Pc5s9tNbEeO3BMrS5MLVBA" name="LocationClientOption"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Pc5s99NbEeO3BMrS5MLVBA" name="LocationClientOption">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Pc5s-NNbEeO3BMrS5MLVBA" name="LocationMode"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_Pc2poNNbEeO3BMrS5MLVBA" name="android">
+    <packagedElement xmi:type="uml:Package" xmi:id="_Pc2podNbEeO3BMrS5MLVBA" name="graphics">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Pc2potNbEeO3BMrS5MLVBA" name="Bitmap"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Pc3QsNNbEeO3BMrS5MLVBA" name="view">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Pc3QsdNbEeO3BMrS5MLVBA" name="View"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Pc3QstNbEeO3BMrS5MLVBA" name="content">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Pc3Qs9NbEeO3BMrS5MLVBA" name="Context"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Pc5F49NbEeO3BMrS5MLVBA" name="SharedPreferences"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Pc3QtNNbEeO3BMrS5MLVBA" name="hardware">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Pc3QtdNbEeO3BMrS5MLVBA" name="Sensor"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Pc3QttNbEeO3BMrS5MLVBA" name="SensorEvent"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Pc33wNNbEeO3BMrS5MLVBA" name="SensorEventListener"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Pc33wdNbEeO3BMrS5MLVBA" name="SensorManager"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Pc33wtNbEeO3BMrS5MLVBA" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Pc33w9NbEeO3BMrS5MLVBA" name="Log"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Pc5F5NNbEeO3BMrS5MLVBA" name="telephony">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Pc5F5dNbEeO3BMrS5MLVBA" name="TelephonyManager"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Pc5s8tNbEeO3BMrS5MLVBA" name="os">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Pc5s89NbEeO3BMrS5MLVBA" name="Handler"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_Pc33xNNbEeO3BMrS5MLVBA" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_Pc33xdNbEeO3BMrS5MLVBA" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Pc33xtNbEeO3BMrS5MLVBA" name="List"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Pc5F4NNbEeO3BMrS5MLVBA" name="ArrayList"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Pc5s8dNbEeO3BMrS5MLVBA" name="Date"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Pc6UAtNbEeO3BMrS5MLVBA" name="concurrent">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_Pc6UA9NbEeO3BMrS5MLVBA" name="Callable"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_Pc6UBNNbEeO3BMrS5MLVBA" name="FutureTask"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Pc5F6dNbEeO3BMrS5MLVBA" name="text">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Pc5s8NNbEeO3BMrS5MLVBA" name="SimpleDateFormat"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_Pc33x9NbEeO3BMrS5MLVBA" name="org">
+    <packagedElement xmi:type="uml:Package" xmi:id="_Pc33yNNbEeO3BMrS5MLVBA" name="apache">
+      <packagedElement xmi:type="uml:Package" xmi:id="_Pc33ydNbEeO3BMrS5MLVBA" name="http">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_Pc33ytNbEeO3BMrS5MLVBA" name="HttpResponse"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_Pc33y9NbEeO3BMrS5MLVBA" name="HttpStatus"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_Pc33zNNbEeO3BMrS5MLVBA" name="NameValuePair"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Pc33zdNbEeO3BMrS5MLVBA" name="client">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Pc4e0NNbEeO3BMrS5MLVBA" name="HttpClient"/>
+          <packagedElement xmi:type="uml:Package" xmi:id="_Pc4e0dNbEeO3BMrS5MLVBA" name="entity">
+            <packagedElement xmi:type="uml:DataType" xmi:id="_Pc4e0tNbEeO3BMrS5MLVBA" name="UrlEncodedFormEntity"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_Pc4e09NbEeO3BMrS5MLVBA" name="methods">
+            <packagedElement xmi:type="uml:DataType" xmi:id="_Pc4e1NNbEeO3BMrS5MLVBA" name="HttpGet"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_Pc4e1dNbEeO3BMrS5MLVBA" name="HttpPost"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Pc4e1tNbEeO3BMrS5MLVBA" name="impl">
+          <packagedElement xmi:type="uml:Package" xmi:id="_Pc4e19NbEeO3BMrS5MLVBA" name="client">
+            <packagedElement xmi:type="uml:DataType" xmi:id="_Pc4e2NNbEeO3BMrS5MLVBA" name="DefaultHttpClient"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Pc4e2dNbEeO3BMrS5MLVBA" name="protocol">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Pc4e2tNbEeO3BMrS5MLVBA" name="HTTP"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Pc4e29NbEeO3BMrS5MLVBA" name="util">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Pc4e3NNbEeO3BMrS5MLVBA" name="EntityUtils"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Pc5F4dNbEeO3BMrS5MLVBA" name="message">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_Pc5F4tNbEeO3BMrS5MLVBA" name="BasicNameValuePair"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Pc6UBdNbEeO3BMrS5MLVBA" name="ksoap2">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Pc6UBtNbEeO3BMrS5MLVBA" name="SoapEnvelope"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Pc6UB9NbEeO3BMrS5MLVBA" name="serialization">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_Pc6UCNNbEeO3BMrS5MLVBA" name="SoapObject"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_Pc6UCdNbEeO3BMrS5MLVBA" name="SoapSerializationEnvelope"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Pc6UCtNbEeO3BMrS5MLVBA" name="transport">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_Pc6UC9NbEeO3BMrS5MLVBA" name="HttpTransportSE"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_Pfr7MNNbEeO3BMrS5MLVBA" name="SharedPreferences">
+    <packagedElement xmi:type="uml:DataType" xmi:id="_PfsiQNNbEeO3BMrS5MLVBA" name="Editor"/>
+  </packagedElement>
+</uml:Model>

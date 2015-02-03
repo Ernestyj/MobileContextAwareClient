@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_JHzWoNNcEeO3BMrS5MLVBA">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_JIesENNcEeO3BMrS5MLVBA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_JIt8oNNcEeO3BMrS5MLVBA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_JHzWodNcEeO3BMrS5MLVBA" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_JHzWotNcEeO3BMrS5MLVBA" name="ernest">
+      <packagedElement xmi:type="uml:Package" xmi:id="_JHzWo9NcEeO3BMrS5MLVBA" name="mobilecontextaware">
+        <packagedElement xmi:type="uml:Package" xmi:id="_JHz9sNNcEeO3BMrS5MLVBA" name="service">
+          <packagedElement xmi:type="uml:Class" xmi:id="_JH0kwNNcEeO3BMrS5MLVBA" name="SendUserInfoDataService">
+            <generalization xmi:id="_JH7ScNNcEeO3BMrS5MLVBA" general="_JH42PNNcEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_JIf6MNNcEeO3BMrS5MLVBA" name="TAG" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_JIf6MdNcEeO3BMrS5MLVBA" value="SendUserInfoDataService"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_JIhIUNNcEeO3BMrS5MLVBA" name="LOCALHOST" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_JIhIUdNcEeO3BMrS5MLVBA" value="192.168.137.1:8080"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_JIiWcNNcEeO3BMrS5MLVBA" name="URL" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_JIkLoNNcEeO3BMrS5MLVBA" name="CLOUD_URL" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_JIkLodNcEeO3BMrS5MLVBA" value="http://mobilecontextaware.duapp.com/addUser.action"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_JIkysNNcEeO3BMrS5MLVBA" name="onHandleIntent" visibility="protected">
+              <ownedParameter xmi:id="_JIkysdNcEeO3BMrS5MLVBA" name="intent" type="_JH5dQdNcEeO3BMrS5MLVBA"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_JH3BANNcEeO3BMrS5MLVBA" name="SendContextDataService">
+            <generalization xmi:id="_JIlZwNNcEeO3BMrS5MLVBA" general="_JH42PNNcEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_JImn4NNcEeO3BMrS5MLVBA" name="TAG" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_JImn4dNcEeO3BMrS5MLVBA" value="SendContextDataService"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_JIodENNcEeO3BMrS5MLVBA" name="LOCALHOST" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_JIodEdNcEeO3BMrS5MLVBA" value="192.168.137.1:8080"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_JIqSQNNcEeO3BMrS5MLVBA" name="URL" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_JIsugNNcEeO3BMrS5MLVBA" name="CLOUD_URL" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_JIsugdNcEeO3BMrS5MLVBA" value="http://mobilecontextaware.duapp.com/addContext.action"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_JIvKwNNcEeO3BMrS5MLVBA" name="EXECUTE_INTERVAL_MILL" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_JIw_8NNcEeO3BMrS5MLVBA" name="SENSOR_DELAY_MILL" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_JIw_8dNcEeO3BMrS5MLVBA" value="600"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_JI2fgNNcEeO3BMrS5MLVBA" name="mContext" visibility="private" type="_JH6EUNNcEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_JI5i0NNcEeO3BMrS5MLVBA" name="mBaiduLocationUtil" visibility="private" type="_JH6EU9NcEeO3BMrS5MLVBA"/>
+            <ownedAttribute xmi:id="_JI8mINNcEeO3BMrS5MLVBA" name="mSensorsUtil" visibility="private" type="_JH6EVdNcEeO3BMrS5MLVBA"/>
+            <ownedOperation xmi:id="_JI-bUNNcEeO3BMrS5MLVBA" name="onCreate" visibility="public"/>
+            <ownedOperation xmi:id="_JI_pcNNcEeO3BMrS5MLVBA" name="onStartCommand" visibility="public">
+              <ownedParameter xmi:id="_JI_pcdNcEeO3BMrS5MLVBA" name="intent" type="_JH5dQdNcEeO3BMrS5MLVBA"/>
+              <ownedParameter xmi:id="_JI_pctNcEeO3BMrS5MLVBA" name="flags">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_JI_pc9NcEeO3BMrS5MLVBA" name="startId">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_JI_pdNNcEeO3BMrS5MLVBA" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_JJA3kNNcEeO3BMrS5MLVBA" name="onDestroy" visibility="public"/>
+            <ownedOperation xmi:id="_JJCswNNcEeO3BMrS5MLVBA" name="onHandleIntent" visibility="protected">
+              <ownedParameter xmi:id="_JJCswdNcEeO3BMrS5MLVBA" name="intent" type="_JH5dQdNcEeO3BMrS5MLVBA"/>
+            </ownedOperation>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_JH42N9NcEeO3BMrS5MLVBA" name="util">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_JH42ONNcEeO3BMrS5MLVBA" name="HttpUtil"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_JH42OdNcEeO3BMrS5MLVBA" name="SharedDataUtil"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_JH6EU9NcEeO3BMrS5MLVBA" name="BaiduLocationUtil"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_JH6EVNNcEeO3BMrS5MLVBA" name="DateTimeUtil"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_JH6EVdNcEeO3BMrS5MLVBA" name="SensorsUtil"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_JH6EVtNcEeO3BMrS5MLVBA" name="WeatherWSUtil"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_JH6EUdNcEeO3BMrS5MLVBA" name="activity">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_JH6EUtNcEeO3BMrS5MLVBA" name="ContextAwareApplicaiton"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_JH42MNNcEeO3BMrS5MLVBA" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_JH42MdNcEeO3BMrS5MLVBA" name="util">
+      <packagedElement xmi:type="uml:Package" xmi:id="_JH42MtNcEeO3BMrS5MLVBA" name="concurrent">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_JH42M9NcEeO3BMrS5MLVBA" name="Executors"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_JH42NNNcEeO3BMrS5MLVBA" name="ScheduledExecutorService"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_JH42NdNcEeO3BMrS5MLVBA" name="ScheduledFuture"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_JH42NtNcEeO3BMrS5MLVBA" name="TimeUnit"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_JH5dRNNcEeO3BMrS5MLVBA" name="ArrayList"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_JH5dRdNcEeO3BMrS5MLVBA" name="List"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_JH42OtNcEeO3BMrS5MLVBA" name="android">
+    <packagedElement xmi:type="uml:Package" xmi:id="_JH42O9NcEeO3BMrS5MLVBA" name="app">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_JH42PNNcEeO3BMrS5MLVBA" name="IntentService"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_JH5dQNNcEeO3BMrS5MLVBA" name="content">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_JH5dQdNcEeO3BMrS5MLVBA" name="Intent"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_JH6EUNNcEeO3BMrS5MLVBA" name="Context"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_JH5dQtNcEeO3BMrS5MLVBA" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_JH5dQ9NcEeO3BMrS5MLVBA" name="Log"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_JH5dRtNcEeO3BMrS5MLVBA" name="org">
+    <packagedElement xmi:type="uml:Package" xmi:id="_JH5dR9NcEeO3BMrS5MLVBA" name="apache">
+      <packagedElement xmi:type="uml:Package" xmi:id="_JH5dSNNcEeO3BMrS5MLVBA" name="http">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_JH5dSdNcEeO3BMrS5MLVBA" name="NameValuePair"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_JH5dStNcEeO3BMrS5MLVBA" name="message">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_JH5dS9NcEeO3BMrS5MLVBA" name="BasicNameValuePair"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
